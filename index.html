@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link href="https://allfont.net/allfont.css?fonts=ninja-naruto" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6qtY7eooQBTfiSVjtrLrGQHaEj%26pid%3DApi&f=1" rel="icon" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Tourist Guide</title>
+</head>
+	
+	<style>
+    
+		.to-top {
+ 			color: #fff;
+ 			position: fixed;
+ 			bottom: 16px;
+	    	right: 32px;
+	    	width: 50px;
+	    	height: 50px;
+	    	border-radius: 50%;
+	    	display: flex;
+	    	align-items: center;
+	    	justify-content: center;
+	    	font-size: 32px;
+	    	background: #1f1f1f;
+	    	text-decoration: none;
+	    	opacity: 0;
+	    	pointer-events: none;
+	    	transition: all 0.4s;
+ 		}
+
+ 		.to-top.active {
+ 			bottom: 32px;
+ 			pointer-events: auto;
+ 			opacity: 1;
+ 		}
+
+ 		.to-top:hover {
+ 			color: #fff;
+ 			text-decoration: none;
+ 		}
+		
+		
+    
+
+	</style>
+	
+	  <style>
+
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+    </style>
+
+<body>
+	
+    <a href="#" class="to-top">
+	<i class="fa fa-arrow-up"></i>
+    </a>
+	
+  <div class="loader">
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+
+            <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Tourist Guide</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="search" id="mysearch">
+                </div>
+
+                <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active mx-4">
+                        <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="./about.html" style="color: beige;">About</a>
+                    </li>
+                    <li>
+                        <div>
+      <button onclick="darkMode()">Darkmode</button>
+    </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/istockphoto-1158782035-170667a.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/istockphoto-1183398770-170667a.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/istockphoto-1209809017-170667a.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/istockphoto-492780092-170667a.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <h1 class="topic my-5">Tourist Places In jabalpur</h1>
+        <!--Card section start-->
+        <div class="container" id="cont">
+
+            <!-- [Suigetsu] card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./Images/download.jpg" alt="" height="390px" width="300px">  
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">bhedaghat</h2>
+                        <p class="card-text">
+                      Suigetsu was a member of Sasuke's renegade group consisting of himself, Suigetsu, Karin, and Jugo. Of the quartet, Suigetsu was the self-styled comedian. He had plenty of sarcastic lines and made every effort he could to get under Karin's skin.
+
+                        </p><p>The above line was especially funny coming from Suigetsu, as the audience got the distinct impression that he probably wasn't a true believer in Sasuke's dream. It was even funnier in the moment, as he made a decisive gesture with a spoon he was using at the time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--[Suigetsu] card end-->
+
+
+            <!--First card-->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./Images/download (2).jpg" alt="naruto" height="330px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Balancing rock</h2>
+                            <p class="card-text">Naruto Uzumaki is the main protagonist in the popular manga and anime series Naruto. He is a cheerful, hyperactive, strong-willed, and occasionally simple-minded young shinobi from the village of Konoha (or Leaf Village).</p>
+                            <p>Since Naruto has the Nine Tails Fox sealed inside him, he is able to use the Fox's chakra, which is much greater than the average human. Initially Naruto and the Fox hated each other, and would rarely grant Naruto his power
+                                unless they were going to die. Eventually, they become friends, and Naruto then refers to the fox by his name, Kurama. At this point, Naruto can use Kurama's chakra at will.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	   <!--First card end(Naruto)-->
+	   <!--Second card start-->
+	
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./Images/download (1).jpg" alt="Sasuke Uchiha" height="350px" width="250px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Dhunadhar waterfall</h2>
+                            <p class="card-text">Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) is one of the last surviving members of Konohagakure's Uchiha clan. After his older brother, Itachi, slaughtered their clan, Sasuke made it his mission in life to avenge them by killing
+                                Itachi. He is added to Team 7 upon becoming a ninja and, through competition with his rival and best friend, Naruto Uzumaki, .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- first card end-->
+            <!-- Jirobo card start-->
+   	<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="./Images/istockphoto-492780092-170667a.jpg" alt=Kawaki height="390px" width="300px">  
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">Dumna nature reserve</h2>
+                        <p class="card-text">A ninja from The Hidden Sound Village and member of The Sound Five.he was the physically strongest member of the Sound Four, but the weakest overall. According to the other members of the group, nevertheless, he was a formidable opponent. Furthermore, Shikamaru stated that Jirōbō's prowess was at jōnin-level. In the anime, another testament to his prowess was him being chosen for reincarnation by Kabuto.</p>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Jirobo card end-->
+<!-- Hanare card start-->
+    <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="/Images/istockphoto-1183398770-170667a.jpg" alt="Hanare" height="390px" width="300px">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">Rani durgavati meuseum</h2>
+                    <p class="card-text">Hanare (ハナレ, Hanare) is a kunoichi from the Jōmae Village. </p>
+                    <p>As a young child, Hanare was said to be very lonely since she had never known her family or seen
+                        her own village. She was trained from an early age in the art of espionage. One day, she was
+                        found crying in a place near her village by the young Kakashi, who spotted her and carried her
+                        on his back. He then explained to her that she can look up to the clouds above and find her way.
+                        They both were then seen by a ninja from Hanare's village and Kakashi put her down on her feet,
+                        said goodbye and left. She was then excited that someone like Kakashi was able to help her in
+                        her life.
+
+                        At one point, she met Kakashi Hatake and developed romantic feelings for him. Hanare, a spy from
+                        Jōmae Village from the Land of Keys, was summoned to infiltrate the Land of Fire and to
+                        investigate Konoha affairs. She was captured by Anbu and placed in the Honesty Room to be
+                        tortured. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hanare  card end-->
+            
+         
+        </main>
+
+        <footer>
+            <nav class="navbar navbar-expand-lg navbar-light nav1">
+                <p class="mx-auto text-light font-weight-lighter">&copy Developed </p>
+            </nav>
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+      
+        <script src="searchbar.js"></script>
+        <script src="./scrollEffect.js"></script>
+    
+        <script src="scrolltotop.js"></script>
+        
+        <script>
+    
+            // ------- Scroll To Top Button -------
+     
+            const toTop = document.querySelector(".to-top");
+            window.addEventListener("scroll", () => {
+    
+                if (window.pageYOffset > 400) {
+                    toTop.classList.add("active");
+                } else {
+                    toTop.classList.remove("active");
+                }
+    
+            });
+    </script>
+          
+           <script>
+          function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            }
+           </script>
+    </body>
+    
+    
+    </html>
+    
+    
